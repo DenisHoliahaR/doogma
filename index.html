@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.js"></script>
+    <title>doogma test</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="sidebar">
+            <div class="buttons__box">
+                <button class="switch first active"  data-option="simple">Simple Scaling</button>
+                <button class="switch"  data-option="smoothing">Smoothing Scaling</button>
+                <button class="switch"  data-option="css">CSS Scaling</button>
+                <button class="switch"  data-option="offscreen">Offscreen Scaling (not implemented)</button>
+                <button class="switch last"  data-option="off">Off Scaling</button>
+            </div>
+
+            <div class="add__image">
+                <input type="text">
+                <button class="rounded" style="width: 100%;" id="addNewImage">Add new Image</button>
+            </div>
+        </div>
+        <div class="playground">
+            <div class="wrapper">
+                <canvas id="image__canvas"></canvas>
+            </div>
+            <div class="options">
+                <button class="rounded" id="previous">Previous</button>
+                <div class="slider">
+                    <p>Adjust Size:</p>
+                    <input type="range" id="widthSlider" min="100" max="1000" value="800">
+                </div>
+                <button class="rounded" id="next">Next</button>
+            </div>
+        </div>
+    </div>
+    <script src="dist/bundle.js"></script>
+</body>
+
+</html>
